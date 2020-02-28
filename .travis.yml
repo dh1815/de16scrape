@@ -1,2 +1,6 @@
 services:
-- docker
+  - docker
+
+script:
+  - docker image build -t deaneharrissnowdon/blatest .
+  - docker container run deaneharrissnowdon/blatest
